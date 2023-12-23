@@ -39,3 +39,10 @@ const COLOR_ORANGE = "#FF7F00";
 let color = COLOR_ORANGE;
 alert(color); // #FF7F00
 
+//assignment time
+console.log(23 + 97);
+
+alert(10 + 25 + 36 + 97 + 7 +4000)
+
+alert((4 + 6 + 9) / 77);
+
