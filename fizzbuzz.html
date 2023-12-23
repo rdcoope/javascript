@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz!</title>
+</head>
+<body>
+    <div class="description">
+        <p>Here is a thought process using the "FizzBuzz" technique</p>
+        <p>In simple terms, FizzBuzz is a simple number replacement where 
+            numbers divisible by 3 are replaced with Fizz and numbers divisible 
+            by 5 are replaced with Buzz. Any numbers divisible by both are replaced by FizzBuzz.
+        </p>
+    </div>
+    <div class="code">
+        <p>Here is my Pseudo-Code for this
+            <ol>
+                <li>generate a list of numbers from 1 to x (lets say x is 100 for now)</li>
+                <li>itterate through the list</li>
+                <li>Check if each number is divisible by 3</li>
+                <li>Replace 3 with Fizz</li>
+                <li>Check if number is divisible by 5</li>
+                <li>Replace 5 with Buzz</li>
+                <li><ul>
+                    <li>if the number is divisible by 5 see if the number is divisible by 3</li>
+                    <li>check if divisible by 3 and 5</li>
+                    <li>if both are true, replace number with FizzBuzz</li>
+                </ul>
+                </li>
+
+            </ol>
+        </p>
+    </div>
+
+    <script>
+        let answer = parseInt(prompt("Please enter the number you would like to FIzzBuzz up to: "))
+
+            for (let i = 1; i <= answer; i++){
+                if ((i % 3 === 0) && (i % 5 ===0)){
+                    console.log("FizzBuzz")
+                } else if (i % 5 === 0){
+                    console.log("Buzz")
+                } else if (i % 3 === 0){
+                    console.log("Fizz")
+                } else {
+                    console.log(i)
+                }
+            }
+            
+    </script>
+</body>
+</html>
